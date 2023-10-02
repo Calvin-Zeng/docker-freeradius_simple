@@ -16,7 +16,8 @@ How to use?
 3. Run a container from freeradius:simple image.
 `sudo docker run -t -i --name freeradius_simple -p 1812:1812/udp -p 1813:1813/udp -v $(pwd)/authorize:/etc/freeradius/3.0/mods-config/files/authorize -v $(pwd)/clients.conf:/etc/freeradius/3.0/clients.conf freeradius:simple /bin/bash`
 
-**In the container...** 
+**In the container...**   
+
 4. sudo chown freerad:freerad /etc/freeradius/3.0/mods-config/files/authorize /etc/freeradius/3.0/clients.conf
 
 5. freeradius -X
